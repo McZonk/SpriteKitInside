@@ -21,9 +21,11 @@
 		const float xStep = size.width / 4.0;
 		const float yStep = size.height / 3.0;
 		
+		NSArray *imageNames = @[ @"SpaceshipRed", @"SpaceshipGreen", @"SpaceshipBlue" ];
+		
 		for(float y = yStep * 0.5; y < size.height; y += yStep) {
 			for(float x = xStep * 0.5; x < size.width; x += xStep) {
-				NSString *imageName = @"SpaceshipRed";
+				NSString *imageName = imageNames[rand() % imageNames.count];
 				
 				SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:imageName];
 				
