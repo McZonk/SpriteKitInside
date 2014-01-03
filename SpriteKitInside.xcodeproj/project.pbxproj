@@ -17,13 +17,15 @@
 		5034FCCA1875FB1B0058EA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5034FCC81875FB1B0058EA37 /* Main.storyboard */; };
 		5034FCCD1875FB1B0058EA37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034FCCC1875FB1B0058EA37 /* ViewController.m */; };
 		5034FCD01875FB1B0058EA37 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034FCCF1875FB1B0058EA37 /* MyScene.m */; };
-		5034FCD21875FB1B0058EA37 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 5034FCD11875FB1B0058EA37 /* Spaceship.png */; };
 		5034FCD41875FB1B0058EA37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5034FCD31875FB1B0058EA37 /* Images.xcassets */; };
 		5034FCDB1875FB1B0058EA37 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5034FCDA1875FB1B0058EA37 /* XCTest.framework */; };
 		5034FCDC1875FB1B0058EA37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5034FCB41875FB1B0058EA37 /* Foundation.framework */; };
 		5034FCDD1875FB1B0058EA37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5034FCB81875FB1B0058EA37 /* UIKit.framework */; };
 		5034FCE51875FB1B0058EA37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5034FCE31875FB1B0058EA37 /* InfoPlist.strings */; };
 		5034FCE71875FB1B0058EA37 /* SpriteKitInsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034FCE61875FB1B0058EA37 /* SpriteKitInsideTests.m */; };
+		5034FCF31876C7890058EA37 /* SpaceshipBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5034FCF01876C7890058EA37 /* SpaceshipBlue.png */; };
+		5034FCF41876C7890058EA37 /* SpaceshipGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5034FCF11876C7890058EA37 /* SpaceshipGreen.png */; };
+		5034FCF51876C7890058EA37 /* SpaceshipRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5034FCF21876C7890058EA37 /* SpaceshipRed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +55,15 @@
 		5034FCCC1875FB1B0058EA37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5034FCCE1875FB1B0058EA37 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		5034FCCF1875FB1B0058EA37 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		5034FCD11875FB1B0058EA37 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		5034FCD31875FB1B0058EA37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5034FCD91875FB1B0058EA37 /* SpriteKitInsideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitInsideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5034FCDA1875FB1B0058EA37 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5034FCE21875FB1B0058EA37 /* SpriteKitInsideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitInsideTests-Info.plist"; sourceTree = "<group>"; };
 		5034FCE41875FB1B0058EA37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5034FCE61875FB1B0058EA37 /* SpriteKitInsideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitInsideTests.m; sourceTree = "<group>"; };
+		5034FCF01876C7890058EA37 /* SpaceshipBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceshipBlue.png; sourceTree = "<group>"; };
+		5034FCF11876C7890058EA37 /* SpaceshipGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceshipGreen.png; sourceTree = "<group>"; };
+		5034FCF21876C7890058EA37 /* SpaceshipRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceshipRed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +132,9 @@
 				5034FCCC1875FB1B0058EA37 /* ViewController.m */,
 				5034FCCE1875FB1B0058EA37 /* MyScene.h */,
 				5034FCCF1875FB1B0058EA37 /* MyScene.m */,
-				5034FCD11875FB1B0058EA37 /* Spaceship.png */,
+				5034FCF01876C7890058EA37 /* SpaceshipBlue.png */,
+				5034FCF11876C7890058EA37 /* SpaceshipGreen.png */,
+				5034FCF21876C7890058EA37 /* SpaceshipRed.png */,
 				5034FCD31875FB1B0058EA37 /* Images.xcassets */,
 				5034FCBD1875FB1B0058EA37 /* Supporting Files */,
 			);
@@ -240,10 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5034FCF31876C7890058EA37 /* SpaceshipBlue.png in Resources */,
 				5034FCC11875FB1B0058EA37 /* InfoPlist.strings in Resources */,
+				5034FCF41876C7890058EA37 /* SpaceshipGreen.png in Resources */,
 				5034FCD41875FB1B0058EA37 /* Images.xcassets in Resources */,
-				5034FCD21875FB1B0058EA37 /* Spaceship.png in Resources */,
 				5034FCCA1875FB1B0058EA37 /* Main.storyboard in Resources */,
+				5034FCF51876C7890058EA37 /* SpaceshipRed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +484,7 @@
 				5034FCEC1875FB1B0058EA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5034FCED1875FB1B0058EA37 /* Build configuration list for PBXNativeTarget "SpriteKitInsideTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +493,7 @@
 				5034FCEF1875FB1B0058EA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,27 +15,30 @@
         /* Setup your scene here */
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+		
+		const CGSize size = self.frame.size;
+		
+		const float xStep = size.width / 4.0;
+		const float yStep = size.height / 3.0;
+		
+		for(float y = yStep * 0.5; y < size.height; y += yStep) {
+			for(float x = xStep * 0.5; x < size.width; x += xStep) {
+				NSString *imageName = @"SpaceshipRed";
+				
+				SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:imageName];
+				
+				sprite.position = CGPointMake(x, y);
+				sprite.scale = 0.2;
+				
+				SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
+				
+				[sprite runAction:[SKAction repeatActionForever:action]];
+				
+				[self addChild:sprite];
+			}
+		}
     }
     return self;
-}
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-		sprite.scale = 0.2;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {

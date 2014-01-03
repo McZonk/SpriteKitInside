@@ -14,12 +14,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
 
-    // Configure the view.
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	
+	// Configure the view.
     SKView * skView = (SKView *)self.view;
     
+	CGSize size = skView.bounds.size;
+	if(size.width < size.height)
+	{
+		size = CGSizeMake(size.height, size.width);
+	}
+	
     // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [MyScene sceneWithSize:size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
