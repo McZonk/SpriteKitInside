@@ -29,6 +29,8 @@
 		size = CGSizeMake(size.height, size.width);
 	}
 	
+	skView.ignoresSiblingOrder = YES;
+	
     // Create and configure the scene.
     SKScene * scene = [MyScene sceneWithSize:size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
