@@ -18,27 +18,16 @@
 		
 		const CGSize size = self.frame.size;
 		
-		const float xStep = size.width / 4.0;
-		const float yStep = size.height / 3.0;
+		const CGPoint center = CGPointMake(size.width * 0.5, size.height * 0.5);
 		
-		NSArray *imageNames = @[ @"SpaceshipRed", @"SpaceshipGreen", @"SpaceshipBlue" ];
+		CGRect box = CGRectMake(center.x - 40.0, center.y - 40.0, 80.0, 80.0);
 		
-		for(float y = yStep * 0.5; y < size.height; y += yStep) {
-			for(float x = xStep * 0.5; x < size.width; x += xStep) {
-				NSString *imageName = imageNames[rand() % imageNames.count];
-				
-				SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:imageName];
-				
-				sprite.position = CGPointMake(x, y);
-				sprite.scale = 0.2;
-				
-				SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-				
-				[sprite runAction:[SKAction repeatActionForever:action]];
-				
-				[self addChild:sprite];
-			}
-		}
+		SKShapeNode *shapeNode = [[SKShapeNode alloc] init];
+		shapeNode.path = [UIBezierPath bezierPathWithRect:box].CGPath;
+		shapeNode.fillColor = [SKColor yellowColor];
+		shapeNode.strokeColor = [SKColor orangeColor];
+		
+		[self addChild:shapeNode];
     }
     return self;
 }
