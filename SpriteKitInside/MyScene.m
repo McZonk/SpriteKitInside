@@ -23,9 +23,9 @@
 		CGRect box = CGRectMake(center.x - 40.0, center.y - 40.0, 80.0, 80.0);
 		
 		SKShapeNode *shapeNode = [[SKShapeNode alloc] init];
-		shapeNode.path = [UIBezierPath bezierPathWithRoundedRect:box cornerRadius:10.0].CGPath;
+		shapeNode.path = [UIBezierPath bezierPathWithOvalInRect:box].CGPath;
 		shapeNode.fillColor = [SKColor yellowColor];
-		shapeNode.strokeColor = [SKColor orangeColor];
+		shapeNode.strokeColor = nil;
 		
 		[self addChild:shapeNode];
     }
