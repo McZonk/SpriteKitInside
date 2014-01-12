@@ -33,6 +33,7 @@
 		shapeNode.strokeColor = [SKColor redColor];
 		shapeNode.lineWidth = 10.0;
 		shapeNode.glowWidth = 10.0;
+		shapeNode.antialiased = NO;
 		
 		[self addChild:shapeNode];
     }
