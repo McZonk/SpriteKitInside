@@ -23,7 +23,7 @@
 		UIBezierPath *path = [UIBezierPath bezierPath];
 		
 		float a = M_PI * 0.5;
-		for(int i = 0; i < 4; ++i, a += M_PI * 2.0 * (1.0 / 4.0)) {
+		for(int i = 0; i < 5; ++i, a += M_PI * 2.0 * (1.0 / 5.0)) {
 			CGPoint point = CGPointMake(
 				center.x + cosf(a) * 100.0,
 				center.y + sinf(a) * 100.0
