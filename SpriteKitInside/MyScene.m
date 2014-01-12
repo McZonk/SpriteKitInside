@@ -20,10 +20,26 @@
 		
 		const CGPoint center = CGPointMake(size.width * 0.5, size.height * 0.5);
 		
-		CGRect box = CGRectMake(center.x - 40.0, center.y - 40.0, 80.0, 80.0);
+		UIBezierPath *path = [UIBezierPath bezierPath];
+		
+		float a = M_PI * 0.5;
+		for(int i = 0; i < 3; ++i, a += M_PI * 2.0 * (1.0 / 3.0)) {
+			CGPoint point = CGPointMake(
+				center.x + cosf(a) * 100.0,
+				center.y + sinf(a) * 100.0
+			);
+			
+			if(i == 0) {
+				[path moveToPoint:point];
+			} else {
+				[path addLineToPoint:point];
+			}
+		}
+		
+		[path closePath];
 		
 		SKShapeNode *shapeNode = [[SKShapeNode alloc] init];
-		shapeNode.path = [UIBezierPath bezierPathWithOvalInRect:box].CGPath;
+		shapeNode.path = path.CGPath;
 		shapeNode.fillColor = [SKColor yellowColor];
 		shapeNode.strokeColor = nil;
 		
