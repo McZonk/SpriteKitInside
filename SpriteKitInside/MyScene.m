@@ -22,26 +22,15 @@
 		
 		UIBezierPath *path = [UIBezierPath bezierPath];
 		
-		float a = M_PI * 0.5;
-		for(int i = 0; i < 5; ++i, a += M_PI * 2.0 * (2.0 / 5.0)) {
-			CGPoint point = CGPointMake(
-				center.x + cosf(a) * 100.0,
-				center.y + sinf(a) * 100.0
-			);
-			
-			if(i == 0) {
-				[path moveToPoint:point];
-			} else {
-				[path addLineToPoint:point];
-			}
-		}
+		[path moveToPoint:CGPointMake(-200.0, -100.0)];
+		[path addCurveToPoint:CGPointMake(200.0, -100.0) controlPoint1:CGPointMake(-200.0, 200.0) controlPoint2:CGPointMake(200, 200.0)];
 		
-		[path closePath];
+		[path applyTransform:CGAffineTransformMakeTranslation(center.x, center.y)];
 		
 		SKShapeNode *shapeNode = [[SKShapeNode alloc] init];
 		shapeNode.path = path.CGPath;
-		shapeNode.fillColor = [SKColor yellowColor];
-		shapeNode.strokeColor = nil;
+		shapeNode.fillColor = nil;
+		shapeNode.strokeColor = [SKColor redColor];
 		
 		[self addChild:shapeNode];
     }
